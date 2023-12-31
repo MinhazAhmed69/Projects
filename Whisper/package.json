@@ -1,0 +1,21 @@
+{
+  "name": "enigma-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.0.0"
+  },
+  "dependencies": {
+    "aes-encryption": "^1.0.4",
+    "express": "^4.18.2",
+    "js-sha256": "^0.10.1",
+    "secure-random": "^1.1.2"
+  }
+}

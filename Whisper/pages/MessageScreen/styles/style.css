@@ -1,0 +1,320 @@
+/* From Top Left to right as it goes down(Top Down) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #081623;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#overview {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.leftside{
+    width: 34vw;
+    height: 90vh;
+    background-color: #081623;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* inner left side */
+.c1 {
+    width: 90%;
+    height: 90%;
+    background-color: #091929;
+}
+
+/* Toggle / The upper bar of the left side */
+.c1n {
+    position: relative;
+    display: flex;
+    width: 100%;
+    background-color: #040b12;
+    justify-content: flex-start;
+    height: 70px;
+    align-items: center;
+    padding: 10px;
+}
+
+/* image of friends that lies inside c1n */
+#c1ti {
+    margin-left: 17px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: gold;
+    transition: box-shadow 0.2s ease; 
+}
+#c1ti:hover {
+    box-shadow: 0 0 10px rgba(225,225,225, 0.5);
+}
+
+/* text of friends that exists beside the image */
+#c1tl {
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.rightside{
+    width: 66vw;
+    min-height: 100vh;
+    background-color: #081623;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Inner Right Side/Block of the right side */
+.c2 {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    background-color: #091929;
+    flex-direction: column;
+}
+
+/* Top bar of c2 */
+.c2m {
+    display: flex;
+    width: 100%;
+    background-color: #040b12;
+    height: 70px;
+    align-items: center;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* image of freind at the top bar */
+#c2mi {
+    margin-left: 17px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: gold;
+}
+
+/* details of friend which is present at the top bar */
+#c2ml {
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* back button present at the right of the top bar */
+.back{
+    background-image: url('../../../assests/arrow.svg');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    height: 2.5em;
+    width: 2.5em;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-right: 10px;
+    background-color: gold;
+}
+.back:hover{
+    box-shadow: 0 0 10px rgba(225,225,225, 0.5);
+}
+
+/* Middle part of c2 or chat space */
+.c2space {
+    width: 100%;
+    height: 100%;
+    background-color: #091929;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+/* Bottom part of c2 or sending messages */
+.c2s {
+    display: flex;
+    width: 100%;
+    background-color: #040b12;
+    height: 70px;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/* Sending messages input */
+.c2s input {
+    height: 90%;
+    width: 95%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 20px;
+    border: 0px;
+    background-color: #081623;
+    color:white;
+    border: 1px solid white;
+}
+.words::placeholder {
+    font-family: Roboto,Arial;
+    font-size: 1em;
+}
+
+/* Button for sending messages */
+.c2s button {
+    height: 35px;
+    width: 35px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid white;
+    background-image: url('../../../assests/send-message.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(225,225,225, 0.5);
+    transition: opacity 0.3s ease;
+}
+.c2s button:hover {
+    opacity: 0.8;
+}
+
+.c1space {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    row-gap: 10px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.ut {
+    display: flex;
+    background-color:rgba(255, 217, 0, 0.63);
+    width: 100%;
+    height: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.ut img{
+    margin-left: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+}
+
+.ut > label {
+    color: #040b12;;
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-family: 'Noto Sans';
+}
+
+.ut > div {
+    margin-right: 10px;
+    background-color: #091929;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ut > div > label {
+    color: white;
+    font-size: bold;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+
+  .mymsg {
+    position: relative;
+    display: flex;
+    min-height: 30px;
+    background-color: rgb(179, 155, 23);
+    width: fit-content;
+    padding: 0 7px 0 7px ;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 70%;
+  }
+
+  .mymsg > p {
+    font-size: 15px;
+    color: white;
+    font-family: 'Noto Sans';
+    text-align: left;
+    vertical-align: middle;
+    overflow: hidden;
+    overflow-wrap: break-word;
+  }
+
+  .yourmsg {
+    display: flex;
+    min-height: 30px;
+    background-color: rgb(226, 19, 19);
+    width: fit-content;
+    padding: 0 7px 0 7px ;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    align-self: flex-end;
+    max-width: 70%;
+  }
+
+  .yourmsg > p {
+    font-size: 15px;
+    color: white;
+    font-family: 'Noto Sans';
+    text-align: left;
+    vertical-align: middle;
+    overflow: hidden;
+    overflow-wrap: break-word;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: black; /* Color of the scrollbar thumb */
+    border-radius: 3px; /* Rounded corners for the thumb */
+  }
+
+  

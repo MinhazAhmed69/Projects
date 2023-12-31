@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+    <link rel="icon" type="image/png" href="/assests/logo.png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Connect</title>
+</head>
+<body>
+    <div id="overview">
+        <div id="container">
+            <label id="filter-header">Ｃｏｎｎｅｃｔ</label>
+            <div id="filter-search-cont">
+                <input id="filter-search" placeholder=Topics>
+                <button id="filter-garbage" onclick=removeFilterTab()></button> 
+                <button id="filter-add" onclick= addFilterTab() ></button>
+            </div>
+            <div id="filter-bottom-cont">
+                <div id="filtertag-disp-div">
+                    <!-- Through JS -->
+                </div>
+                <button id="connect-btn" onclick="searchUsers()"> Connect</button>
+            </div>
+            <!-- Absolute -->
+            <div id="logodiv">
+                <img src="../../assests/logo.png">
+                <label>Whisper</label>
+            </div>
+            
+            <div id="usercard">
+                <div class="wrapper">
+                    <img class="image--cover" src="../../assests/PROFILE3.png">
+                </div>
+                <div class="profileDataContainer">
+                    <div class="profileData">
+                    </div>
+                </div>
+            </div>
+
+            <div id="message1">
+            <button id="Messagesbtn" onclick=goToMsg()>Go to Messages</button>
+            <button id="Logoutbtn" onclick="logOut()">LOG OUT</button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script defer src="./index.js"></script>
+</html>

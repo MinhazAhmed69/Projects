@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/assests/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <link rel="stylesheet" href="../MessageScreen/styles/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+</head>
+<body>
+    <script defer src="./index.js"></script>
+    <div id="overview">
+
+        <div class="leftside center">
+            <div class="c1">
+                <div class="c1n">
+                    <img id="c1ti" src="../../assests/friends.png">
+                    <label id="c1tl">Friends</label>
+                </div>
+                <div class="c1space">
+                    <!-- Thru Js -->
+                </div>
+            </div>
+        </div>
+
+        <div class="rightside center">
+            <div class="c2">
+                <div class="c2m">
+                    <img id="c2mi" src="../../assests/friends.png">
+                    <label id="c2ml">Friends</label>
+                    <button class="back" onclick=back()></button>
+                </div>
+                <div class="c2space">
+                    <div class="mymsg" ><p>HI</p></div>
+                    <div class="yourmsg" ><p>HI</p></div>
+                    <!-- Thru Js -->
+                </div>
+                <div class="c2s">
+                    <input type="text" id="msginput" class="words" placeholder="Message">
+                    <button id="sendMSG" onclick=addMessage()></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

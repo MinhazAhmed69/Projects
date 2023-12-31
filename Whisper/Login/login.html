@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/assests/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login&Register</title>
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="./styles/register.css">
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+<body>
+
+        <div id="overview">
+            <div class="container" id="c2">
+                <div class="gen-flex1">
+                    <img class="logo" src="../../assests/logo.png">
+                    <label id="logintext">Ｒｅｇｉｓｔｅｒ</label>
+                    <div class="regBoxes">
+                        <input type="text" id="rusernameinput" class="userinput" placeholder="Enter your username">
+                        <input id="rpasswordinput1" class="userinput" type="password" placeholder="Password">
+                        <input id="rpasswordinput2" class="userinput" type="password" placeholder="Confirm Password">
+                    </div>
+                    <button id="regisbutton" onclick="validateRegister()">Submit</button>
+                    <a id="gotoreg" onclick="goToLog()" >Login</a>
+                </div>
+            </div>
+            <div class="container" id="c1">
+                <div class="gen-flex2">
+                    <img class="logo" src="../../assests/logo.png">
+                    <label id="logintext">Ｌｏｇｉｎ</label>
+                    <div class="textBoxes">
+                        <input id="lusernameinput" class="userinput" type="text" placeholder="Enter your username">
+                        <input id="lpasswordinput" class="userinput" type="password" placeholder="Password">
+                        </div>
+                    <button id="loginbutton" onclick="validateLogin()">Submit </button>
+                    <a id="gotolog" onclick="goToReg()">Register </a>
+                </div>
+            </div>
+        </div>
+        
+</body>
+<script defer src="./index.js"></script>
+</html>
