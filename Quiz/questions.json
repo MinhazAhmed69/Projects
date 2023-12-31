@@ -1,0 +1,18 @@
+{
+    "QuestionBank": [
+        {
+            "Difficulty": "2",
+            "Question": "XYZ",
+            "Options": ["A", "B", "C", "D"],
+            "Answer": "A",
+            "Explanation" : "Source"
+        },
+        {
+            "Difficulty": "2",
+            "Question": "XYZ",
+            "Options": ["A", "B", "C", "D"],
+            "Answer": "A",
+            "Explanation" : "Source"
+        }
+    ]
+}

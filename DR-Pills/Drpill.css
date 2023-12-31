@@ -1,0 +1,111 @@
+
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li, form, fieldset, input, button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  background-image: url("26807.jpg");
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+nav h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 10px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+main {
+  
+  padding: 20px;
+  margin: 10px;
+  translate: 50px 0px
+}
+
+section {
+  margin-top: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #666;
+}
+
+form {
+  margin-top: 10px;
+}
+
+fieldset {
+  padding: 10px;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  nav h1 {
+      font-size: 20px;
+  }
+  nav ul li {
+      margin-right: 10px;
+  }
+  main {
+      padding: 10px;
+  }
+}
+
+#title {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  display:flex;
+  justify-content: center;
+  font-size: 30px;
+}
